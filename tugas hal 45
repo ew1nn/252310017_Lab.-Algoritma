@@ -1,0 +1,26 @@
+#include <iostream> // digunakan untuk menjalankan perintah input dan output
+using namespace std; // supaya tidak perlu menulis std:: di depan cout dan cin
+
+int main() {
+	
+	// membuat variabel
+	int x = 50; // memberi nilai 50 ke variabel x
+	int a, b, c, d, e; // membuat beberapa variabel untuk menyimpan hasil
+	
+	// proses logika
+	a = x > 5 + 5;   // mengecek apakah nilai x lebih besar dari 10
+	b = x > 100;     // mengecek apakah nilai x lebih besar dari 100
+	c = a && b;      // hasil benar kalau a dan b sama-sama benar
+	d = a || b;      // hasil benar kalau salah satu dari a atau b benar
+	e = !(c);        // hasilnya kebalikan dari nilai c
+	
+	// menampilkan hasil, 1 artinya benar dan 0 artinya salah
+	cout << "\nNilai a = x > 5 + 5 = " << a << endl; // menampilkan hasil perbandingan pertama (x > 10)
+	cout << "Nilai b = x > 100 = " << b << endl;    // menampilkan hasil perbandingan kedua (x > 100)
+	cout << "Nilai c = a && b = " << c << endl;     // menampilkan hasil dari logika AND antara a dan b
+	cout << "Nilai d = a || b = " << d << endl;     // menampilkan hasil dari logika OR antara a dan b
+	cout << "Nilai e = !(c) = " << e << endl;       // menampilkan hasil dari logika NOT pada variabel c
+
+	
+	getchar(); // supaya program tidak langsung tertutup setelah dijalankan
+}
