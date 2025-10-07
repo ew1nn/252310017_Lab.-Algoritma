@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    float r, t, volume;
+    float pi = 3.14;
+
+    cout << "Menghitung Volume Tabung\n\n";
+    cout << "Masukkan jari-jari: ";
+    cin >> r;
+    cout << "Masukkan tinggi: ";
+    cin >> t;
+
+    volume = pi * r * r * t;
+
+    cout << "Volume tabung: pi x r x r x t\n";
+    cout << "pi = " << pi << endl;
+    cout << "r = " << r << endl;
+    cout << "t = " << t << endl;
+    cout << pi << " x " << r << " x " << r << " x " << t << endl;
+    cout << "Hasil Volume Tabung = " << volume << endl;
+
+    return 0;
+}
